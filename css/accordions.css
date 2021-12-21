@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+.ds-container {
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.example-container {
+  margin: 0 auto;
+  padding: 10px;
+  width: 90%;
+}
+h1 {
+  font-family: Roboto;
+  font-size: 24px;
+}
+
+/* Button Class */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 
+Do not delete the following comment. It is essential for tracking purposes.
+#Merc2021DoNotDelete 
+*/
+
+
+/********************* 
+  Accordion Container 
+**********************/
+.ds-accordions__container {
+  max-width: 568px;
+  width: 100%;
+}
+
+/********************** 
+  Accordion Row 
+**********************/
+.ds-accordion {
+    border-top: 1px solid #666;
+}
+.ds-accordion:last-of-type {
+    border-bottom: 1px solid #666;
+}
+
+.ds-accordion:last-of-type.ds-accordions-expander--active {
+    border-bottom: 0px solid #666;
+}
+
+.ds-accordion.ds-accordions-expander--active{
+  border-top: 2px solid #ca261a;
+}
+
+
+/**********************
+ Accorion Buttons 
+**********************/
+
+.ds-accordion__button .icon {
+  width: 16px;
+  height: 16px;
+  right: 16px;
+  position: absolute;
+  top: 20px;
+}
+
+.ds-accordion__button {
+    display: flex;
+    align-items: center;
+    color: #06c;
+    cursor: pointer;
+    padding: 16px 56px 16px 16px;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    border-radius: 2px;
+}
+
+.ds-accordions-expander--active .ds-accordion__button{
+  padding-top: 14px;
+}
+
+.ds-accordion__button:focus,
+.ds-accordion__button--expand-all:focus {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0467c6;
+  outline: none;  
+}
+.ds-accordion__button.by-keyboard:focus,
+.ds-accordion__button--expand-all.by-keyboard:focus {
+  box-shadow: 0 0 0 0px #fff, 0 0 0 0px #0467c6 !important;
+}
+
+
+.ds-accordion__button--expand-all:focus,
+.ds-accordion__button--expand-all.by-keyboard:focus {
+  text-decoration: underline;
+}
+
+/********************** 
+  Button Heading 
+**********************/
+
+.ds-accordion__button h2 {
+    font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+@media screen and (min-width:40em) {
+  .ds-accordion__button h2 {
+    color: #333;
+  }
+}
+
+.ds-accordion.ds-accordions-expander--active .ds-accordion__button h2 {
+  font-weight: 500;
+}
+
+/**********************
+ Control Expand Collapse 
+**********************/
+
+.accordion__controls {
+    display: flex;
+    justify-content: flex-end;
+}
+.ds-accordion__button, .ds-accordion__button--expand-all {
+    background: 0 0;
+    border: 0;
+    box-sizing: border-box;
+}
+.ds-accordion__button--expand-all {
+  font-family: Roboto;
+    font-size: 1rem;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #0467c6;
+    margin: 16px;
+    cursor: pointer;
+    border-radius: 1px;
+    padding: 0;
+}
+.ds-accordion__button--expand-all:hover{
+  text-decoration: underline;
+}
+
+.accordion--expand-close-all {
+    display: none;
+}
+.ds-accordion__controls--active .accordion--expand-close-all {
+    display: block;
+}
+.ds-accordion__controls--active .accordion--expand-open-all {
+    display: none;
+}
+
+
+/**********************
+ Accordion Contents 
+**********************/
+
+.ds-accordion__content {
+    /* display: none; */
+    max-height: 0px;
+    min-height: 0px;
+    transition: all 0.8s;
+    overflow: hidden;
+    padding: 0 16px;
+}
+
+.ds-accordion__content * {
+  max-width: 568px;
+  width: 100%;
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #333;
+}
+
+.ds-accordion__content p{
+  padding: 9px 0px 16px 0px;
+  margin: 0;
+}
+
+.ds-accordions-expander--active .ds-accordion__content {
+    /* display: block; */
+    min-height: 100px;
+    max-height: 800px;
+}
+
+.accordion__button-icon--open{
+  width:16px;
+  height:16px;
+  background:url("../img/icons/chevron-down.svg");
+  transition:0.5s;
+  background-repeat: no-repeat;
+
+  right: 16px;
+  position: absolute;
+  top: 20px;
+}
+.ds-accordions-expander--active .accordion__button-icon--open {
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}

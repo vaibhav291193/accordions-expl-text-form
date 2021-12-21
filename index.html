@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="demos-script.js"></script>
+<link rel="stylesheet" type="text/css" href="css/buttons.css">
+    <link rel="stylesheet" type="text/css" href="css/input.css">
+    <link rel="stylesheet" type="text/css" href="css/dropdown.css">
+    <link rel="stylesheet" type="text/css" href="css/checkboxes.css">
+    <link rel="stylesheet" type="text/css" href="css/links.css">
+    <link rel="stylesheet" type="text/css" href="css/lists.css">
+    <link rel="stylesheet" type="text/css" href="css/accordions.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Accordions</title>
+</head>
+
+<body>
+    <div class="ds-container">
+        <div class="example-container">
+            <h1>Contact us on Phone</h1>
+            
+            <div class="ds-accordions__container">
+                <div class="accordion__controls">
+                    <button id="accordion-actions" class="ds-accordion__button--expand-all by-keyboard" aria-expanded="false">
+                        <span class="accordion--expand-open-all">Expand all</span>
+                        <span class="accordion--expand-close-all">Collapse all</span>
+                    </button>
+                </div>
+                <div class="ds-accordion" id="accordion-1">
+                    <button class="ds-accordion__button by-keyboard" id="accordion-button-id-1" aria-controls="accordion-content-1" aria-expanded="false" data-toggle="collapse">
+                        <h2>General enquiries</h2>
+                        <div class="accordion__button-icon--open"></div>
+                    </button>
+                    <div role="region" class="ds-accordion__content" id="accordion-content-1" aria-labelledby="accordion-button-id-1" aria-hidden="true" style="display: none;" data-toggle="expander-content">
+<h3 id="generalEnqList">Help with:</h3><ul aria-labelledby="generalEnqList">    <li>Delivery status of a trackable item</li>    <li>Community mailboxes</li>    <li>Postage rates</li>    <li>Sending and receiving mail</li>     <li>Email marketing: inquiries and unsubscribing</li></ul>
+                        <p>
+                            Monday to Friday, 7 a.m. – 11 p.m. ET
+                        </p>
+<p>
+Saturday and Sunday, 9 a.m. – 9 p.m. ET
+</p>
+<p>1-866-607-6301</p>
+<p>Outside of Canada:</p>
+<p>416-979-3033</p>                        
+
+
+
+
+                    </div>
+                </div>
+                <div class="ds-accordion" id="accordion-2">
+                    <button class="ds-accordion__button by-keyboard" id="accordion-button-id-2" aria-controls="accordion-content-2" aria-expanded="false" data-toggle="collapse">
+                        <h2>Technical support desk</h2>
+                        <div class="accordion__button-icon--open"></div>
+                    </button>
+                    <div role="region" class="ds-accordion__content" id="accordion-content-2" aria-labelledby="accordion-button-id-2" aria-hidden="true" style="display: none;" data-toggle="expander-content">
+                        <table>
+<tr>
+<th>Technical support for epost, epost Connect, FlexDelivery™ and usernames and passwords.</th>
+<th>Support available 24 hours a day, every day</th>
+<th>1-877-376-1212</th>
+</tr>
+</table>
+                    </div>
+                </div>
+                <div class="ds-accordion" id="accordion-3">
+                    <button class="ds-accordion__button by-keyboard" id="accordion-button-id-3" aria-controls="accordion-content-3" aria-expanded="false" data-toggle="collapse">
+                        <h2>More topics</h2>
+                        <div class="accordion__button-icon--open"></div>
+                    </button>
+                    <div role="region" class="ds-accordion__content" id="accordion-content-3" aria-labelledby="accordion-button-id-3" aria-hidden="true" style="display: none;" data-toggle="expander-content">
+                        <ul>
+<li>
+<a href="#" class="by-keyboard">Contact us via online channels</a>
+</li>
+<li>
+<a href="#" class="by-keyboard">Contact us via mail</a>
+</li>
+<li>
+<a href="#" class="by-keyboard">Contact us via social media</a>
+</li>
+</ul>
+
+                    </div>
+                </div>
+            </div>  
+
+
+<div style="padding-top: 40px;">
+<h1>Create a Shipment</h1>
+            
+            <div class="ds-accordions__container">
+                <div class="ds-accordion" id="accordion-1-cs">
+                    <button class="ds-accordion__button by-keyboard" id="accordion-button-id-1-cs" aria-controls="accordion-content-1-cs" aria-expanded="false" data-toggle="collapse">
+                        <h2>Select your package shape</h2>
+                        <div class="accordion__button-icon--open"></div>
+                    </button>
+                    <div role="region" class="ds-accordion__content" id="accordion-content-1-cs" aria-labelledby="accordion-button-id-1-cs" aria-hidden="true" style="display: none;" data-toggle="expander-content">
+<div role="radiogroup" aria-labelledby="radio-names-shape shapeError" style="padding-top:24px;">
+                <div class="checkbox-container">
+                    <input class="by-keyboard" id="cylindrical" name="shape" type="radio">
+                    <label for="cylindrical">Cylindrical</label>
+                </div>
+
+                <div class="checkbox-container">
+                    <input class="by-keyboard" id="spherical" name="shape" type="radio">
+                    <label for="spherical">Spherical</label>
+                </div>
+
+<div class="checkbox-container">
+                    <input class="by-keyboard" id="cubicalShape" name="shape" type="radio">
+                    <label for="cubicalShape">Cubical</label>
+                </div>
+<div id="shapeError" class="ds-error"></div>
+</div>
+
+
+                    </div>
+                </div>
+                <div class="ds-accordion" id="accordion-2-cs">
+                    <button class="ds-accordion__button by-keyboard" id="accordion-button-id-2-cs" aria-controls="accordion-content-2-cs" aria-expanded="false" data-toggle="collapse">
+                        <h2>Package details</h2>
+                        <div class="accordion__button-icon--open"></div>
+                    </button>
+                    <div role="region" class="ds-accordion__content" id="accordion-content-2-cs" aria-labelledby="accordion-button-id-2-cs" aria-hidden="true" style="display: none;" data-toggle="expander-content">
+<form name="detailsForm">
+<div style="padding-top:24px;">                        
+<label id="going-to-label">Measurement System</label><select id="goingTo" aria-labelledby="going-to-label errMsgDD" aria-invalid="false" class="ds-cpc-control-select__tpl" style="display:none;">    <option selected="selected" value="0">Select System</option>    <option value="Metric">Metric</option>    <option value="Imperial">Imperial</option>    </select><div id="errMsgDD" class="ds-error-dd" ></div>
+
+
+<label id="fullnameHint">Package weight</label>
+            <input id="packageWeight" type="text" autocomplete="off" aria-labelledby="fullnameHint" aria-required="true" aria-invalid="false" aria-describedby="errMsg2" >
+<div id="errMsg2" class="ds-error"></div>
+</form>
+</div>
+                    </div>
+                </div>
+                <div class="ds-accordion" id="accordion-3-cs">
+                    <button class="ds-accordion__button by-keyboard" id="accordion-button-id-3-cs" aria-controls="accordion-content-3-cs" aria-expanded="false" data-toggle="collapse">
+                        <h2>Additional Options</h2>
+                        <div class="accordion__button-icon--open"></div>
+                    </button>
+                    <div role="region" class="ds-accordion__content" id="accordion-content-3-cs" aria-labelledby="accordion-button-id-3-cs" aria-hidden="true" style="display: none;"  data-toggle="expander-content">
+<div role="group" aria- style="padding-top:24px;">
+                <div class="checkbox-container">
+                    <input id="sign" class="by-keyboard" type="checkbox">
+                    <label for="sign">Signature</div>
+                <div class="checkbox-container">
+                    <input id="age" class="by-keyboard" type="checkbox">
+                    <label for="age">Proof of age: 18</label>
+                </div>
+                <div class="checkbox-container">
+                    <input id="pickup" class="by-keyboard" type="checkbox">
+                    <label for="pickup">Card for pickup</label>
+                </div>
+            <div aria-disabled="true" class="checkbox-container disabled">
+                    <input disabled id="noSafeDrop" class="by-keyboard" type="checkbox" checked>
+                    <label for="noSafeDrop">Do not safe drop</label>
+                </div>    
+<div aria-disabled="true" class="checkbox-container disabled">
+                    <input disabled id="leave" class="by-keyboard" type="checkbox">
+                    <label for="leave">Leave at door, no card</label>
+                </div>            
+<div class="checkbox-container">
+                    <input id="liability" class="by-keyboard" type="checkbox">
+                    <label for="liability">Liability coverage</label>
+                </div>
+</div>
+                        
+
+                    </div>
+</div>                
+
+<form name="form1" action="thankyou.html" onSubmit="return validateForm();">
+<div style="padding-bottom:30px; padding-top:24px;"><input type="submit" value="Submit" class="button primary-button by-keyboard">
+</div>
+</form>
+
+
+</div>            
+</div>  
+</div>
+        
+</div>
+    </div>
+</body>
+<script src="js/accordions-script.js"></script>
+<script src="js/links-script.js"></script>
+<script src="js/radiobuttons-script.js"></script>
+<script src="js/checkbox-script.js"></script>
+<script src="js/dropdown.js"></script>
+<script src="js/input-script.js"></script>
+<script src="js/buttons-script.js"></script>
+</html>

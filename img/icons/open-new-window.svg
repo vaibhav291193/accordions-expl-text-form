@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Icons / Microaction / Open new window</title>
+    <g id="Icons-/-Microaction-/-Open-new-window" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="Open_in_a_new_window" transform="translate(1.000000, 1.000000)" stroke="#0467C6">
+            <polyline id="Shape" points="9.43 0.5 13.5 0.5 13.5 4.57"></polyline>
+            <line x1="13.5" y1="0.5" x2="7" y2="7" id="Shape"></line>
+            <polyline id="Shape" points="13.5 7.38 13.5 13.5 0.5 13.5 0.5 0.5 6.62 0.5"></polyline>
+        </g>
+    </g>
+</svg>

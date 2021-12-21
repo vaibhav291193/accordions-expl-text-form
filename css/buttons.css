@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body{
+  margin: 0;
+  padding: 0;
+}
+.ds-container {
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+.example-container {
+  margin: 0 auto;
+  padding: 10px;
+  width: 90%;
+}
+h1 {
+  font-family: Roboto;
+  font-size: 24px;
+}
+
+/* Button Class */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 
+Do not delete the following comment. It is essential for tracking purposes.
+#Merc2021DoNotDelete 
+*/
+
+button,
+.button {
+  font-family: Roboto;
+  min-width: 84px;
+  max-height: 44px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.4px;
+  text-align: center;
+  width: auto;
+  border-radius: 2px;
+  border: 0px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px !important;
+  cursor: pointer;
+}
+
+button + button,
+.button + .button {
+  margin-left: 16px;
+}
+button[aria-disabled="true"],
+a[aria-disabled="true"] {
+  pointer-events: none;
+}
+
+
+/* Primary Button */
+.primary-button {
+  color: #ffffff;
+  background-color: #0467c6;
+}
+.primary-button:hover {
+  background-color: #004990;
+}
+
+.primary-button:focus {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0467c6;
+  background-color: #004990; 
+  outline: none;  
+}
+
+.primary-button.by-keyboard:focus {
+  box-shadow: 0 0 0 0px #fff, 0 0 0 0px #0467c6 !important;
+}
+
+.primary-button.disabled,
+.primary-button:disabled {
+  color: #666666;
+  background-color: #f0f0f0;
+}
+
+/* Secondary Button */
+.secondary-button {
+  background-color: #ffffff;
+  color: #0467c6;
+  box-shadow: inset 0 0 0 1px #0467c6;
+  border: none;
+}
+.secondary-button:hover {
+  color: #004990;
+  box-shadow: inset 0 0 0 2px #004990;
+  border: none;
+}
+.secondary-button:focus {
+  color: #004990;
+  box-shadow: inset 0 0 0 2px #004990, 0 0 0 2px #fff, 0 0 0 4px #0467c6; 
+  outline: none;
+}
+.secondary-button.by-keyboard:focus {
+  color: #004990;
+  box-shadow: inset 0 0 0 2px #004990 !important;
+  border: none;
+}
+.secondary-button.disabled,
+.secondary-button:disabled {
+  color: #666666;
+  border: 1px solid #666666;
+}
+
+
+/* Micro Buttons */
+/* 
+Do not delete the following comment. It is essential for tracking purposes.
+#Merc2021DoNotDelete 
+*/
+
+.micro-buttons{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #0467c6;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 1px;
+  vertical-align: middle;
+}
+
+a[role="button"].copy:before {
+  content: url('../img/icons/copy.svg');
+  position: relative;
+  padding-right: 10px;
+  display: inline-block;
+  top: 3px;
+}
+
+.micro-buttons:hover{
+  text-decoration: underline;
+}
+
+.micro-buttons:focus {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #0467c6;
+  text-decoration: underline;
+  outline: none;  
+}
+
+.micro-buttons.by-keyboard:focus {
+  box-shadow: 0 0 0 0px #fff, 0 0 0 0px #0467c6 !important;
+}
+
+
+/* Group Button */
+
+.btn-group button, 
+.btn-group .button {
+  float: left;
+}
+
+.clear{
+  clear: both;
+}
+
+@media only screen and (max-width: 40em) {
+  button,
+  .button {
+    min-width: 100%;
+  }
+  button + button,
+  .button + .button {
+    margin-left: 0px;
+  }
+
+  .btn-group button, 
+  .btn-group .button {
+    min-width: 84px;
+  }
+
+  .btn-group button, 
+  .btn-group .button {
+    min-width: 100%;
+  }
+}

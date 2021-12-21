@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.ds-container {
+  width: 98%;
+  margin: 0 auto;
+  border: 0px solid #ccc;
+  padding: 3% 1%;
+}
+.example-container {
+  width: 450px;
+  margin: 0 auto;
+  border: 0px solid red;
+  padding: 10px;
+}
+@media only screen and (max-width: 40em) {
+  .example-container {
+    width: 270px;
+  }
+}
+h1 {
+  font-family: Roboto;
+  font-size: 24px;
+}
+
+/* 
+Do not delete the following comment. It is essential for tracking purposes.
+#Merc2021DoNotDelete 
+*/
+
+/* Input Field */
+label{
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  color: #333333;
+  display: block;
+  text-align: left !important;
+}
+input[type="text"],
+input[type="password"] {
+  border-radius: 2px;
+  border: solid 1px #666666;
+  background: #fff;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  color: #333333;
+  padding: 10px 16px;
+  height: 44px;
+  outline: none;
+  max-width: 368px;
+  width: 100%;
+  margin-bottom: 24px; /* Change as per need */
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 40em) {
+  input[type="text"],
+  input[type="password"] {
+    max-width: 100%;
+  }
+}
+
+label + input[type="text"], label + input[type="password"], label + textarea {
+  margin-top: 4px !important;
+}
+
+/* Place holder text */
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #333333;
+  opacity: 1; /* Firefox */
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #333333;
+}
+
+input[type="text"]::-ms-input-placeholder,
+input[type="password"]::-ms-input-placeholder { /* Microsoft Edge */
+ color: #333333;
+}
+
+/* End Placeholder text */
+
+/* Read only text */
+input[type="text"]:read-only,
+input[type="password"]:read-only,
+textarea:read-only {
+  border-radius: 2px;
+  border: solid 1px #666666;
+  background-color: #f0f0f0;
+  color: #666666;
+}
+
+input[type="text"]:read-only::-moz-selection { background: transparent; }
+input[type="text"]:read-only::selection { background: transparent; }
+
+
+/* End Read only text */
+
+/* Focus State */
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  outline: 0;
+  border: solid 1px #0467c6;
+  border-radius: 2px;
+  
+  -webkit-box-shadow: inset 1px 1px 0px 0px#0467c6, inset -1px -1px 0px 0px#0467c6;
+  -moz-box-shadow: inset 1px 1px 0px 0px#0467c6, inset -1px -1px 0px 0px#0467c6;
+  box-shadow: inset 1px 1px 0px 0px#0467c6, inset -1px -1px 0px 0px#0467c6;
+}
+
+input[type="text"].error,
+input[type="password"].error {
+  border: solid 1px #ca261a !important;
+  margin-bottom: 4px !important;
+}
+
+input[type="text"]:focus.error,
+input[type="password"]:focus.error {
+  border: solid 1px #ca261a !important;
+  outline: none;
+  -webkit-box-shadow: inset 1px 1px 0px 0px#ca261a, inset -1px -1px 0px 0px#ca261a;
+  -moz-box-shadow: inset 1px 1px 0px 0px#ca261a, inset -1px -1px 0px 0px#ca261a;
+  box-shadow: inset 1px 1px 0px 0px#ca261a, inset -1px -1px 0px 0px#ca261a;
+
+
+  margin-bottom: 4px !important;
+}
+
+textarea.error {
+  border: solid 1px #ca261a !important;
+}
+textarea:focus.error {
+  border: solid 1px #ca261a !important;
+  outline: none;
+  -webkit-box-shadow: inset 1px 1px 0px 0px#ca261a, inset -1px -1px 0px 0px#ca261a;
+  -moz-box-shadow: inset 1px 1px 0px 0px#ca261a, inset -1px -1px 0px 0px#ca261a;
+  box-shadow: inset 1px 1px 0px 0px#ca261a, inset -1px -1px 0px 0px#ca261a;
+}
+
+
+/* End Focus State */
+
+input[type="text"].disabled,
+input[type="text"]:disabled,
+input[type="password"].disabled,
+input[type="password"]:disabled,
+textarea.disabled, textarea:disabled {
+  background-color: #f0f0f0;
+  pointer-events: none;
+}
+
+.ds-error {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  color: #ca261a;
+  text-align: left;
+  display: block;
+
+  background-image: url('../img/icons/red-alert.svg');
+  background-repeat: no-repeat;
+  padding-left: 32px;
+}
+
+.hintText{
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: 0.5px;
+  color: #333333;
+
+  padding: 0;
+  margin: 0 0 4px 0;
+}
+
+
+textarea {
+  border-radius: 2px;
+  border: solid 1px #666666;
+  background-color: #ffffff;
+  padding: 10px 16px;
+  width: 368px;
+  height: 205px;
+  resize: none;
+
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #333333;
+}
+@media only screen and (max-width: 40em) {
+  textarea {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+textarea + .maxCharacter{
+  margin-top: 4px;
+}
+
+.maxCharacter{
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #666666;
+
+  padding: 0;
+  margin: 0 0 4px 0;
+}

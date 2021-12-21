@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+.ds-container {
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  background-color: #eee;
+}
+.example-container {
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #eee;
+  width: 90%;
+}
+
+h1 {
+  font-family: Roboto;
+  font-size: 24px;
+}
+
+/* 
+Do not delete the following comment. It is essential for tracking purposes.
+#Merc2021DoNotDelete 
+*/
+
+/* Links Class */
+a, a[role="button"] {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #0467c6;
+  text-decoration: none;
+  position: relative;
+  border-radius: 1px;
+}
+
+a:hover, a[role="button"]:hover{
+  text-decoration: underline;
+}
+
+p {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #333333;
+  vertical-align: middle;
+  display: inline-block;
+}
+p a {
+  text-decoration: underline;
+  font-size: inherit;
+}
+
+
+p.legal {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  color: #666666;
+  display: inline-block;
+}
+p.legal a {
+  font-weight: 400;
+  line-height: 1.67;
+}
+
+
+a:not(.micro-buttons)[target="_blank"]:after {
+  content: url('../img/icons/open-new-window.svg');
+  position: relative;
+  padding-left: 4px;
+  display: inline-block;
+  top: 3px;
+}
+
+a:focus, a[role="button"]:focus {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 2px #0467c6;
+  text-decoration: underline;
+  outline: none;  
+}
+
+a.by-keyboard:focus, a[role="button"].by-keyboard:focus {
+  box-shadow: 0 0 0 0px #fff, 0 0 0 0px #0467c6 !important;
+}

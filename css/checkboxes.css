@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+.ds-container {
+  width: 98%;
+  margin: 0 auto;
+  border: 0px solid #ccc;
+  padding: 3% 1%;
+}
+.example-container {
+  width: 450px;
+  margin: 0 auto;
+  border: 0px solid red;
+  padding: 10px;
+}
+@media only screen and (max-width: 40em) {
+  .example-container {
+    width: 270px;
+  }
+}
+h1 {
+  font-family: Roboto;
+  font-size: 24px;
+}
+
+/* The container */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 
+Do not delete the following comment. It is essential for tracking purposes.
+#Merc2021DoNotDelete 
+*/
+
+.checkbox-container {
+  display: block;
+  position: relative;
+  padding-left: 0px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height:24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  color: #333333;
+  text-align: left;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 16px;
+}
+
+.checkbox-container label{
+  cursor: pointer;
+  
+}
+div[role="group"] .checkbox-container:last-child{
+  margin-bottom: 0;
+}
+
+[type='checkbox'].by-keyboard:focus + label:before{
+  box-shadow: 0 0 0 0px #fff, 0 0 0 0px #0467c6 !important;
+}
+
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before,
+[type="radio"]:checked:focus + label:before,
+[type="radio"]:not(:checked):focus + label:before {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0467c6;
+}
+
+/* accessibility */
+/* [type="checkbox"]:checked:hover + label:before,
+[type="checkbox"]:not(:checked):hover + label:before,
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before,
+[type="radio"]:checked:hover + label:before,
+[type="radio"]:not(:checked):hover + label:before,
+[type="radio"]:checked:focus + label:before,
+[type="radio"]:not(:checked):focus + label:before {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0467c6;
+} */
+
+/* hover style just for information */
+/* label:hover:before {
+  box-shadow: 0 0 0 2px #fff, 0 0 0 4px #0467c6;
+} */
+
+/* Hide the browser's default checkbox */
+.checkbox-container [type="checkbox"], 
+.checkbox-container [type="radio"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  left: 0;
+  z-index: 1;
+  padding: 0;
+  margin: 0;
+}
+
+.checkbox-container [type='checkbox']:checked+label, 
+.checkbox-container [type='checkbox']:not(:checked)+label,
+.checkbox-container [type='radio']:checked+label, 
+.checkbox-container [type='radio']:not(:checked)+label {
+  font-size: 16px !important;
+  line-height:24px;
+  font-weight: 300;
+  display: block;
+  cursor: pointer;
+}
+
+.checkbox-container [type='checkbox']:checked+label, 
+.checkbox-container [type='checkbox']:not(:checked)+label {
+  padding-left: 26px;
+}
+.checkbox-container [type='radio']:checked+label, 
+.checkbox-container [type='radio']:not(:checked)+label {
+  padding-left: 26px;
+}
+
+.checkbox-container [type='checkbox']+label:before,
+.checkbox-container [type='radio']+label:before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border: solid #333333 1px;
+    border-radius: 1px;
+    background-color: #fff;
+}
+
+.checkbox-container [type='checkbox']+label:before {
+  border-radius: 1px;
+}
+.checkbox-container [type='radio']+label:before {
+    border-radius: 50%;
+}
+
+.checkbox-container [type='radio']:checked+label:before {
+    background: #0467C6;
+    border: 1px solid #0467C6;
+}
+
+.checkbox-container [type='checkbox']:checked+label:before {
+    background: #0467C6;
+    border: 1px solid #0467C6;
+}
+
+.checkbox-container [type='checkbox']+label:after{
+    position: absolute;
+    content: none;
+    top: 6px;
+    left: 5px;
+    width: 6px;
+    height: 9px;
+    transform: rotate(44deg);
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+}
+
+.checkbox-container [type='radio']+label:after {
+    content: none;
+    position: absolute;
+    top: 10px;
+    left: 6px;
+    width: 4px;
+    height: 4px;
+    border-radius: 40%;
+    background: white;
+}
+
+.checkbox-container [type='checkbox']:checked+label:after,
+.checkbox-container [type='radio']:checked+label:after {
+  content: '';
+}
+
+.checkbox-container [type='radio']:checked+label:after {
+  transform: none !important;
+}
+
+/* Disabled Effects */
+.checkbox-container.disabled{
+  color: #666666;
+  pointer-events: none;
+}
+.checkbox-container.disabled label{
+  color: #666666 !important;
+}
+
+.checkbox-container.disabled [type='radio']+label:after{
+  background-color: #666666;
+}
+.checkbox-container.disabled [type='radio']:checked:focus + label:after{
+  background-color: transparent;
+}
+
+.checkbox-container.disabled [type='checkbox']+label:after {
+  border: solid #666;
+  border-width: 0 2px 2px 0;
+}
+.checkbox-container.disabled [type='radio']+label:before,
+.checkbox-container.disabled [type='checkbox']+label:before {
+    border: solid #d9d9d9 1px;
+}
+.checkbox-container.disabled [type='radio']:checked+label:before,
+.checkbox-container.disabled [type='checkbox']:checked+label:before {
+    background: #d9d9d9;
+}
+
+.checkbox-container [type='checkbox']:disabled + label,
+.checkbox-container [type='radio']:disabled + label{
+  opacity: 1 !important;
+}
+
+
+/* Its a common class, might be already included */
+.ds-error {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  color: #ca261a;
+  text-align: left;
+  display: block;
+
+  background-image: url('../img/icons/red-alert.svg');
+  background-repeat: no-repeat;
+  padding-left: 32px;
+}
+
+
+div[role="radiogroup"] h6,
+div[role="group"] h6 {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: 0.5px;
+  color: #333333;
+  text-align: left;
+  display: block;
+  margin: 0px;
+  margin-bottom: 16px;
+}
