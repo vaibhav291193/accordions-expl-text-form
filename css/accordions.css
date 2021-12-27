@@ -38,7 +38,7 @@ Do not delete the following comment. It is essential for tracking purposes.
   Accordion Container 
 **********************/
 .ds-accordions__container {
-  max-width: 568px;
+  max-width: 720px;
   width: 100%;
 }
 
@@ -187,7 +187,7 @@ Do not delete the following comment. It is essential for tracking purposes.
 }
 
 .ds-accordion__content * {
-  max-width: 568px;
+  max-width: 720px;
   width: 100%;
   font-family: Roboto;
   font-size: 1rem;
